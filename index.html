@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Cash Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+  
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Cash Register</h1>
+    </header>
+
+    <main class="register">
+
+      <section class="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li>
+            <span class="item-name">Burger</span> <span class="item-price">$4.95</span>
+            <button class="add-btn">Add</button>
+          </li>
+          <li>
+            <span class="item-name">Soda</span> <span class="item-price">$1.75</span>
+            <button class="add-btn">Add</button>
+          </li>
+          <li>
+            <span class="item-name">Fries</span> <span class="item-price">$2.25</span>
+            <button class="add-btn">Add</button>
+          </li>
+          <li>
+            <span class="item-name">Pie Slice</span> <span class="item-price">$3.25</span>
+            <button class="add-btn">Add</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cart">
+        <h2>Order Pad</h2>
+        <ul id="cart-items">
+          <li class="empty-cart">No items</li>
+        </ul>
+        <p class="total">Total: $<span id="total-price">0.00</span></p>
+      </section>
+
+      <section class="payment">
+        <h2>Pay Up</h2>
+        <input id="cash" placeholder="Cash handed over" />
+        <button id="purchase-btn">Ring it up!</button>
+        <div id="change-due"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>© 2025 Cash Register | Designed with HTML, CSS, JS</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

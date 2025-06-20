@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #111;
+}
+.slogan {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.register {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.menu, .cart, .payment {
+  flex: 1 1 300px;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+}
+
+.menu h2,
+.cart h2,
+.payment h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.menu ul,
+.cart ul {
+  list-style: none;
+}
+
+.menu li,
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.item-name {
+  font-weight: 500;
+}
+
+.item-price {
+  color: #444;
+}
+
+.add-btn,
+.cart-remove-btn {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.add-btn:hover,
+.cart-remove-btn:hover {
+  background: #444;
+}
+
+.total {
+  font-weight: 600;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.empty-cart {
+  color: #aaa;
+  font-style: italic;
+}
+
+#cash {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  background: #fafafa;
+}
+#purchase-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+#purchase-btn:hover {
+  background: #333;
+}
+#change-due {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 6px;
+  white-space: pre-line;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 3rem;
+}
